@@ -1,6 +1,6 @@
 <?php
-require('config.php');
-require('connect.php');
+require('secure/config.php');
+require('secure/connect.php');
 function CZ_prepare_mail($contact_zero_config,$db){
   function write_to_log($sub_info,$db){
     //writes the data to the database. 
