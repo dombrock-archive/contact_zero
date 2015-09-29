@@ -5,7 +5,7 @@ This software is in early alpha and is not ready for use.
 
 At the time of writing it has a fully functional PHP mailer script with validation and a config file that will allow for multiple Cc's.
  
-This does not yet log data to an SQLite DB.
+It was just updated to include logic for saving contacts to a SQLite db and this is working but currently not secure. 
  
 It does not yet have any front-end logic.
 
