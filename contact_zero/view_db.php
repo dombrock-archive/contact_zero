@@ -7,7 +7,7 @@ if($pw == $contact_zero_config['Master_password']){
   
      $ret = $db->query($sql);
      while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
-        echo "<div class='contact_div'>";
+        echo "<div class='contact_div'>"."\n";
         echo "ID = ". $row['ID'] . "\n"."<br>";
         echo "NAME = ". $row['NAME'] ."\n"."<br>";
         echo "EMAIL = ". $row['EMAIL'] ."\n"."<br>";
@@ -17,9 +17,9 @@ if($pw == $contact_zero_config['Master_password']){
         echo "</div>";
   
      }
-     echo "Data queried successfully\n";
+     echo "Data queried successfully\n"."\n";
      $db->close();
 }
 else{
-  echo "You didnt say the magic word!";
+  echo "Ah, Ah, Ah, you didnt say the magic word!";
 }
