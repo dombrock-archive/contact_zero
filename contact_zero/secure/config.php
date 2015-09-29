@@ -2,6 +2,7 @@
 $contact_zero_config = array(
   'Master_password'=>'Password123',//used for looking at the DB log
   'Master_email'=>'matdombrock@gmail.com',//This will be the main TO: address
+  'Log_to_db' => true,
   'CC'=> array(
     'joe'=>'joe@example.com',
     'jane'=>'jane@example.com',
