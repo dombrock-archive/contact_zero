@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<title>
+		contact_zero view the database
+	</title>
+</head>
+<body>
+<input type="password" id="password"><br>
+<div id="submit">SUBMIT</div>
+<div id="message"></div>
+<script>
+$("#submit").click(function(){
+  $.post( "view_db.php", {
+    pw: $("#password").val()
+  },function(data){//
+      $("#message").html(data);
+    }
+  );
+});
+</script>
+</body>
+</html>
