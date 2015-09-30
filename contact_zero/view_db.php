@@ -1,7 +1,9 @@
 <?php
 require('secure/connect.php');
 require('secure/config.php');
-$pw = $_POST["pw"];
+if (!$pw = $_POST["pw"]){
+  echo "You might be looking for view_db.html<br>";
+};
 if($pw == $contact_zero_config['Master_password']){
   $sql ="SELECT * from CONTACTS;";
   
