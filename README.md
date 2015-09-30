@@ -7,9 +7,11 @@ At the time of writing it has a fully functional PHP mailer script with validati
  
 It was just updated to include logic for saving and retrieving contacts to and from a SQLite db. This is working but currently not secure against SQL injection attacks.
  
-It does not yet have any front-end logic.
+Contains front end logic with validation that informs the user of errors with their input and sends the data to the server side mailer script with jQuery $.post and displays response. 
 
-It does not yet have any working samples, however you can test it by sending a POST request to ````contact_zero/zero_mailer.php```` with values for:
+Includes a minimal_template.html file with all of the basic HTML required to implement the form. 
+
+You can also test it by sending a POST request to ````contact_zero/zero_mailer.php```` with values for:
 ````
 user_name //required
 user_email //required
