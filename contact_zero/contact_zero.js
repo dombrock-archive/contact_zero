@@ -34,7 +34,7 @@ C_Z.verify = function(){
 C_Z.message = function(message){
       $("#C_Z_message").fadeOut("fast" ,function(){
       $("#C_Z_message").html(message);
-      $("#C_Z_message").fadeIn("slow");
+      $("#C_Z_message").fadeIn("fast");
     });
 };
 //Submits data to the php form if it has been varified
@@ -51,7 +51,7 @@ C_Z.submit_mail = function(){
       user_msg: C_Z.get_info()["user_msg"],
     },function(data){//
         if(data=="SENT"){//everything worked
-          $("#C_Z_wrap").fadeOut("slow", function(){
+          $("#C_Z_wrap").fadeOut("fast", function(){
             C_Z.message("Thanks!");
           });
         }
