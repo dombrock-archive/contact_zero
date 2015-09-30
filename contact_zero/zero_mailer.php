@@ -27,9 +27,6 @@ function CZ_prepare_mail($contact_zero_config,$db){
     if (!$_POST["user_email"] || !filter_var($_POST["user_email"], FILTER_VALIDATE_EMAIL)){
       return "user_email";
     }
-    if (!$_POST["user_name"]){
-      return "user_name";
-    }
     if (!$_POST["user_msg"]){
       return "user_msg";
     }
