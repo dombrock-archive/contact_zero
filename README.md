@@ -1,7 +1,8 @@
 # contact_zero
+###This README needs to be updated!
 Clean and simple contact software for you site or web app featuring full validation and database logging using PHP/JS/CSS/HTML/SQLite.
  
-Requires jQuery and AngularJS
+Requires jQuery and might someday require AngularJS.
   
 ##Major Work In Progress
 This software is in early alpha and is not ready for use. 
