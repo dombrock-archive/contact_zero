@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+  font-family: Century Gothic, sans-serif;
+}
+body{
+  background:#c0c0c0;
+  margin:0 auto;
+}
+.submit_btn{
+  background:black;
+  border-radius: 1vw;
+  color:#c0c0c0;
+  display:inline-block;
+  margin:0.5vw;
+  margin-bottom:0;
+  margin-top:0;
+  padding:1vw;
+}
+.C_Z_FORM{
+  margin:0;
+  text-align:center;
+}
+.C_Z_wrap{
+  background:#3a8547;
+  border-radius: 1vw;
+  color:white;
+  display:inline-block;
+  margin:1vw;
+  padding:1vw;
+}
+.C_Z_message{
+  text-align:left;
+}
+.contact_div{
+  background:#c0c0c0;
+  border-radius: 1vw;
+  color:black;
+  margin:1vw;
+  padding:1vw;
+}
+input{
+  border-radius: 1vw;
+  margin:0.5vw;
+  padding:1vw;
+}
