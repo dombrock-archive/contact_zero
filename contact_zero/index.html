@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="view_db.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!--The script on this page can just be part of the main JS-->
 	<meta charset="utf-8">
 	<title>
 		contact_zero, view the database
@@ -20,7 +21,10 @@
           $.post( "view_db.php", {
             pw: $("#password").val()
           },function(data){//
-              $("#C_Z_message").html(data);
+              $("#C_Z_message").slideUp(500,function(){
+                $("#C_Z_message").html(data);
+                $("#C_Z_message").slideDown(500);
+              });
             }
           );
         });
