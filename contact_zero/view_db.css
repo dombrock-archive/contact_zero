@@ -7,6 +7,12 @@ body{
   background:#c0c0c0;
   margin:0 auto;
 }
+h1{
+  background:black;
+  color:white;
+  padding:1vw;
+  margin-top:0;
+}
 .submit_btn{
   background:black;
   border-radius: 1vw;
@@ -16,6 +22,9 @@ body{
   margin-bottom:0;
   margin-top:0;
   padding:1vw;
+}
+.submit_btn:hover{
+  color:white;
 }
 .C_Z_FORM{
   margin:0;
