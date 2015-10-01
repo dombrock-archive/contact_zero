@@ -32,9 +32,9 @@ C_Z.verify = function(){
 };
 //changed the text in the #C_Z_message
 C_Z.message = function(message){
-      $("#C_Z_message").fadeOut("fast" ,function(){
-      $("#C_Z_message").html(message);
-      $("#C_Z_message").fadeIn("fast");
+      $("#C_Z_message").slideUp(500 ,function(){
+        $("#C_Z_message").html(message);
+        $("#C_Z_message").slideDown(500);
     });
 };
 //Submits data to the php form if it has been varified
