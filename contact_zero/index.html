@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <link rel="stylesheet" href="view_db.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<meta charset="utf-8">
 	<title>
@@ -8,19 +9,24 @@
 	</title>
 </head>
 <body>
-  Enter Master Password Below To View Contact Log:<br>
-  <input type="password" id="password"><br>
-  <div id="submit">SUBMIT</div>
-  <div id="message"></div>
-  <script>
-    $("#submit").click(function(){
-      $.post( "secure/view_db.php", {
-        pw: $("#password").val()
-      },function(data){//
-          $("#message").html(data);
-        }
-      );
-    });
-  </script>
+  <div id="C_Z_FORM" class="C_Z_FORM">
+    <div class="C_Z_wrap" id="C_Z_wrap">
+      Enter Master Password Below To View Contact Log<br>
+      <input type="password" id="password"><br>
+      <div id="submit" class="submit_btn">SUBMIT</div>
+      <div id="C_Z_message" class="C_Z_message"></div>
+      <script>
+        $("#submit").click(function(){
+          $.post( "view_db.php", {
+            pw: $("#password").val()
+          },function(data){//
+              $("#C_Z_message").html(data);
+            }
+          );
+        });
+      </script>
+    </div>
+  </div>
+  
 </body>
 </html>
