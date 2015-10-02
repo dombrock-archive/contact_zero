@@ -5,7 +5,7 @@ Clean and simple contact software for you site or web app featuring full validat
 Requires jQuery and might someday require AngularJS.
   
 ##Major Work In Progress
-This software is in early alpha and is not ready for use. 
+This software is moving out of early alpha and is almost ready for use. 
 
 At the time of writing it has a fully functional PHP mailer script with validation and a config file that will allow for multiple Cc's.
  
