@@ -1,0 +1,41 @@
+<!-- Not a valid HTML doc this is ony a part of a page-->
+<!--This HTML code can go anywhere as long as the script src for contact_zero.js points to the right place-->
+<!--Required jQuert 2.x-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--THIS STYLESHEET IS ONLY HERE TO MAKE THE TEMPLATE LOOK A LITTLE BETTER IT IS NOT REQUIRED FOR FUNCTIONALITY. YOU SHOULD WRITE YOUR OWN CSS-->
+<link rel="stylesheet" href="../contact_zero/CZ_style.css">
+<!--START CONTACT_ZERO FORM-->
+<div class="C_Z_wrap">
+  <div id="C_Z_FORM">
+    <div id="C_Z_message"> </div>
+    <div id="C_Z_wrap">
+      <div class="C_Z_input_wrap">
+        <span class="C_Z_input_title">Your Name: </span> <input class="C_Z_input" id="C_Z_user_name" type="text" value="Jeff Smith">
+      </div>
+      <div class="C_Z_input_wrap">
+        <span class="C_Z_input_title">Your Email*: </span> <input class="C_Z_input" id="C_Z_user_email" type="text" value="Jeff@example.com">
+      </div>
+      <div class="C_Z_input_wrap">
+        <span class="C_Z_input_title">Your Phone:</span> <input class="C_Z_input" id="C_Z_user_phone" type="text" value="360-555-5555">
+      </div>
+      <div class="C_Z_input_wrap">
+        <span class="C_Z_input_title">Your Subject:</span>
+        <select class="C_Z_input" id="C_Z_user_subject">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div class="C_Z_input_wrap">
+        <span class="C_Z_input_title">Your Message*:</span> <br><textarea class="C_Z_input" id="C_Z_user_msg" type="text"></textarea>
+      </div>
+      <br>
+      <span id="C_Z_submit">SUBMIT</span>
+    </div><!--end wrap-->
+  </div>
+</div>
+<!--END CONTACT_ZERO FORM-->
+<!--Requires contact_zero.js, this reference should be altered to reflect it's current path
+Must also come after #C_Z_FORM-->
+<script src="../contact_zero/contact_zero.js"></script>
