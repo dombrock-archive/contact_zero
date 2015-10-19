@@ -37,12 +37,12 @@ C_Z.message = function(message){
         $("#C_Z_message").slideDown(500);
     });
 };
-//Submits data to the php form if it has been varified
+//Submits data to the php form if it has been verified
 C_Z.submit_mail = function(){
-  var varified = C_Z.verify();
-  if(varified===true){
-    //we have varified all the data and will now attempt to post it
-    $.post( "zero_mailer.php", {
+  var verified = C_Z.verify();
+  if(verified===true){
+    //we have verified all the data and will now attempt to post it
+    $.post( CZ_Path+"zero_mailer.php", {
       //gets data right from the C_Z.get_info() function since we know it is safe
       user_name: C_Z.get_info()["user_name"], 
       user_email: C_Z.get_info()["user_email"],
@@ -64,7 +64,7 @@ C_Z.submit_mail = function(){
   }
   else{
     //something did not pass validation on the client end (this script)
-    C_Z.message(varified);
+    C_Z.message(verified);
   }
 };
 
