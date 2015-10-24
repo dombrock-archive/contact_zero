@@ -26,6 +26,7 @@ h1{
 }
 .submit_btn, #C_Z_submit:hover{
   color:white;
+  cursor:pointer;
 }
 .C_Z_FORM{
   margin:0;
