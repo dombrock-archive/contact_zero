@@ -1,4 +1,4 @@
-#contact_zero
+# contact_zero
 A very minimal and modular AJAX contact form with database logging of submissions with SQLite. 
 
 You can see an demo of this software here:
@@ -53,6 +53,6 @@ You will also need to make sure the the direct reference to the ````contact_zero
 
 If you server supports sending mail via PHP then you will be good to go!
 
-##How do I see the database though? I thought there was a database!
+## How do I see the database though? I thought there was a database!
 
 There is database! To look at it all you need to do is navigate your browser to ````view_db.html```` found in the ````contact_zero/```` directory among the other the other back-end files. In order to see the information located in the database you will need to enter the Master Password that you set in the file ````config.php````.
